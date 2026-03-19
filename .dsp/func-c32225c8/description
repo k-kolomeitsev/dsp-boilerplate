@@ -1,0 +1,3 @@
+source: src/lib/common/env-value.decorator.ts#EnvParam
+kind: function
+purpose: Interface defining EnvValue decorator options: name, transform, defaultValue.

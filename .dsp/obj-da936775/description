@@ -1,0 +1,3 @@
+source: moment
+kind: external
+purpose: Date/time manipulation library (legacy, but widely used).

@@ -1,0 +1,3 @@
+source: src/lib/common/constants.ts#LogChannelName
+kind: function
+purpose: Constant 'app_logs' for Redis pub/sub log channel name.

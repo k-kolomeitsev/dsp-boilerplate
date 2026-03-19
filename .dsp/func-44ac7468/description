@@ -1,0 +1,3 @@
+source: src/typeorm-cli-datasource.ts#connectionSource
+kind: function
+purpose: Exported DataSource instance for TypeORM CLI (migrations, schema sync).

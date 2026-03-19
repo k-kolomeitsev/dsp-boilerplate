@@ -1,0 +1,3 @@
+source: @nestjs/microservices
+kind: external
+purpose: NestJS microservices transport layer (NATS, Redis, etc.).

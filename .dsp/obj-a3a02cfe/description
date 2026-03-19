@@ -1,0 +1,3 @@
+source: @nestjs/core
+kind: external
+purpose: NestJS application factory and core runtime.

@@ -1,0 +1,3 @@
+source: @nestjs/common
+kind: external
+purpose: NestJS core decorators, interfaces, pipes, guards, interceptors, and utilities.

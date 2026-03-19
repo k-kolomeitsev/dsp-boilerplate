@@ -1,0 +1,1 @@
+Wrapper function forcing UTC offset 0 on all moment instances.

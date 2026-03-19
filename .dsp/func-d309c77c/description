@@ -1,0 +1,3 @@
+source: src/app.service.ts#AppService
+kind: function
+purpose: Injectable service class providing getHello() string response.

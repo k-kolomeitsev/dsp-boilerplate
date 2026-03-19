@@ -1,0 +1,3 @@
+source: src/lib/common/nats-jetstream.helper.ts#publishJetStreamWorkQueueMessage
+kind: function
+purpose: Publishes message to JetStream subject, ensuring stream exists. Scaffold.

@@ -1,0 +1,3 @@
+source: src/lib/common/nats-jetstream.helper.ts#parseNatsIdPayload
+kind: function
+purpose: Parses NATS message payload to extract an ID from string, JSON string, or JSON object.

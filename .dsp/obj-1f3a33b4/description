@@ -1,0 +1,3 @@
+source: react-helmet-async
+kind: external
+purpose: Thread-safe document head manager for React (SSR-compatible).

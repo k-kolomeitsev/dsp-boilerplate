@@ -1,0 +1,3 @@
+source: react-dom
+kind: external
+purpose: React DOM renderer for browser environments.

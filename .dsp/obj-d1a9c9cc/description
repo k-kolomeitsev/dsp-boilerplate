@@ -1,0 +1,3 @@
+source: frontend/src/i18n/locales/ar.json
+kind: object
+purpose: Arabic translation resource for all UI strings. Arabic triggers RTL layout.

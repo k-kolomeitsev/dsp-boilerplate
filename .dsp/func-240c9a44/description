@@ -1,0 +1,3 @@
+source: src/lib/dto/example.dto.ts#CreateExampleDto
+kind: function
+purpose: DTO class for creating an Example: name (required), description (optional).

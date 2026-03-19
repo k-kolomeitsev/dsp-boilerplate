@@ -1,0 +1,1 @@
+Global module providing NATS client. Exports NATS_CLIENT token. Scaffold.

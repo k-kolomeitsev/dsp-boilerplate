@@ -1,0 +1,3 @@
+source: frontend/src/components/LanguageSwitcher.tsx#LanguageSwitcher
+kind: function
+purpose: Dropdown menu component for switching between 5 supported languages.

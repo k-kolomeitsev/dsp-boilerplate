@@ -1,0 +1,17 @@
+{
+  "common": {
+    "title": "DSP Boilerplate",
+    "githubLink": "DSP GitHub",
+    "seo": {
+      "title": "DSP Boilerplate",
+      "description": "DSP Boilerplate — 前端应用启动模板。"
+    }
+  },
+  "languages": {
+    "russian": "Русский",
+    "english": "English",
+    "kazakh": "Қазақша",
+    "chinese": "中文",
+    "arabic": "العربية"
+  }
+}

@@ -1,0 +1,3 @@
+source: class-validator
+kind: external
+purpose: Decorator-based validation library for TypeScript classes.

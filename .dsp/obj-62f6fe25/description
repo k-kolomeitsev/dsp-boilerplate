@@ -1,0 +1,3 @@
+source: src/services/example/example.service.ts
+kind: object
+purpose: CRUD service for Example entity using TypeORM Repository. Provides create, findAll, findOne, remove with NotFoundException handling.

@@ -1,0 +1,3 @@
+source: src/lib/infra/s3.config-module.ts
+kind: object
+purpose: NestJS proxy module that provides and exports S3Config. Scaffold — not active by default.

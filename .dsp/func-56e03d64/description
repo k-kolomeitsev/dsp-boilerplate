@@ -1,0 +1,3 @@
+source: src/lib/infra/nats.infra-module.ts#NATS_CLIENT
+kind: function
+purpose: Injection token constant for NATS client.

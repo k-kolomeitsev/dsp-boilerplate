@@ -1,0 +1,3 @@
+source: src/services/example/example.service.ts#ExampleService
+kind: function
+purpose: CRUD service class using TypeORM Repository pattern.

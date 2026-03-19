@@ -1,0 +1,3 @@
+source: react-router-dom
+kind: external
+purpose: Declarative routing for React SPA with BrowserRouter.

@@ -1,0 +1,3 @@
+source: src/lib/infra/s3.infra-module.ts
+kind: object
+purpose: Global NestJS module providing AWS S3 client via nest-aws-sdk. Scaffold — not active by default.

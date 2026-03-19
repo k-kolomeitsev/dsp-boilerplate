@@ -1,0 +1,3 @@
+source: frontend/src/App.tsx#App
+kind: function
+purpose: Root React component handling routing, HelmetProvider, language detection from URL, and RTL direction switching.

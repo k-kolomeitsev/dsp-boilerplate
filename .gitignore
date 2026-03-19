@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+__pycache__
+# Coverage
+coverage
+
+files/
+pg_data
+redis_data
+minio_data
+nats_data
+
+# Transpiled files
+build/
+dist/
+
+# VS Code
+.vscode
+!.vscode/tasks.js
+
+# JetBrains IDEs
+.idea/
+
+# Optional npm cache directory
+.npm
+.yarn
+
+# Optional eslint cache
+.eslintcache
+
+# Misc
+.DS_Store
+
+browser-profiles
+
+# Environment variables
+.env
+.env.local
+.env.*.local

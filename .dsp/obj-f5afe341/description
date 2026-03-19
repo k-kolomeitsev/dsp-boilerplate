@@ -1,0 +1,3 @@
+source: express
+kind: external
+purpose: Minimal Node.js web framework for HTTP middleware and routing.

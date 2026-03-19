@@ -1,0 +1,3 @@
+source: src/lib/infra/s3.config.ts#S3Config
+kind: function
+purpose: Configuration class for S3/MinIO credentials and region. Scaffold.

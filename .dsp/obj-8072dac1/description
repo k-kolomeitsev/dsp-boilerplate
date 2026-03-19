@@ -1,0 +1,3 @@
+source: class-transformer
+kind: external
+purpose: Class-to-plain and plain-to-class transformation with decorators.

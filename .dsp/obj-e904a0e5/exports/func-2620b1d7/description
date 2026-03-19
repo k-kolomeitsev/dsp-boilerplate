@@ -1,0 +1,1 @@
+Parses NATS message payload to extract an ID from string, JSON string, or JSON object.

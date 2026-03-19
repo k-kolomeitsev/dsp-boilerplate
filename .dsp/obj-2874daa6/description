@@ -1,0 +1,3 @@
+source: src/services/example/example.module.ts
+kind: object
+purpose: NestJS feature module for Example CRUD. Registers TypeORM repository, controller, and service. Exports ExampleService.

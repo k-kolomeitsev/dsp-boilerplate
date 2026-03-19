@@ -1,0 +1,3 @@
+source: @heroicons/react
+kind: external
+purpose: SVG icon set by Tailwind Labs: outline, solid, and mini variants.

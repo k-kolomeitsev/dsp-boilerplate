@@ -1,0 +1,3 @@
+source: react-i18next
+kind: external
+purpose: React bindings for i18next: useTranslation hook, Trans component.

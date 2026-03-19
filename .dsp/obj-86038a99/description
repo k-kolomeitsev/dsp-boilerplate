@@ -1,0 +1,3 @@
+source: frontend/src/i18n/locales/zh.json
+kind: object
+purpose: Chinese translation resource for all UI strings.

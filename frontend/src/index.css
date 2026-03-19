@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+:root {
+  color-scheme: dark;
+}

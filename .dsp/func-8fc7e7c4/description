@@ -1,0 +1,3 @@
+source: frontend/src/components/SEOHead.tsx#SEOHead
+kind: function
+purpose: Component generating complete SEO meta tags with OG, Twitter Card, hreflang, and canonical.

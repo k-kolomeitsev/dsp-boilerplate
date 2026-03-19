@@ -1,0 +1,3 @@
+source: src/lib/common/nats-jetstream.helper.ts
+kind: object
+purpose: NATS JetStream helpers: ensure work-queue streams, publish messages, create durable pull-consumers, parse ID payloads. Scaffold — not active by default.

@@ -1,0 +1,3 @@
+source: frontend/src/components/SEOHead.tsx
+kind: object
+purpose: SEO meta tag component using react-helmet-async. Generates title, description, Open Graph, Twitter Card, canonical URL, hreflang links for 5 languages, and favicon references.

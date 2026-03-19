@@ -1,0 +1,1 @@
+Configuration class for app-level env vars with isProd getter.

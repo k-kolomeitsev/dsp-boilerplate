@@ -1,0 +1,1 @@
+Interface defining EnvValue decorator options: name, transform, defaultValue.

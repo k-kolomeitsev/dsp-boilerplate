@@ -1,0 +1,3 @@
+source: src/lib/infra/global.config.ts
+kind: object
+purpose: Application-level environment configuration: APP_ENV, APP_PORT, APP_HOST, APP_PREFIX, APP_SERVICE. Extends ConfigFragment for startup validation.

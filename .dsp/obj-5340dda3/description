@@ -1,0 +1,3 @@
+source: src/lib/infra/redis.config-module.ts
+kind: object
+purpose: NestJS proxy module that provides and exports RedisConfig. Scaffold — not active by default.

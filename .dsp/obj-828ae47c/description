@@ -1,0 +1,3 @@
+source: src/lib/dto/example.dto.ts
+kind: object
+purpose: DTOs for Example API: CreateExampleDto (name, optional description) and ExampleResponseDto (id, name, description, createdAt) with Swagger + class-validator decorators.

@@ -1,0 +1,3 @@
+source: src/lib/infra/index.ts
+kind: object
+purpose: Barrel re-export for all infrastructure modules and configs: Global, TypeORM, Redis, S3, NATS.

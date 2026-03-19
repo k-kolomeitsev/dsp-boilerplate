@@ -1,0 +1,3 @@
+source: src/lib/infra/typeorm.config.ts#TypeORMConfig
+kind: function
+purpose: Configuration class for PostgreSQL connection with fullConfig getter.

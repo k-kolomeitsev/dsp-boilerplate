@@ -1,0 +1,3 @@
+source: frontend/src/helpers/custom-client.ts#AXIOS_INSTANCE
+kind: function
+purpose: Pre-configured Axios instance with withCredentials and JSON accept header.

@@ -1,0 +1,3 @@
+source: src/services/example/example.controller.ts#ExampleController
+kind: function
+purpose: REST controller class with create/findAll/findOne/remove methods.

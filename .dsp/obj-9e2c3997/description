@@ -1,0 +1,3 @@
+source: frontend/src/i18n/index.ts
+kind: object
+purpose: i18next initialization: configures 5 languages with LanguageDetector (querystring -> localStorage -> navigator -> htmlTag), fallback to English.

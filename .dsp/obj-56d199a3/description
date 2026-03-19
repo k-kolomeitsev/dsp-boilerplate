@@ -1,0 +1,3 @@
+source: nats
+kind: external
+purpose: NATS.js client — publish/subscribe, request/reply, JetStream.

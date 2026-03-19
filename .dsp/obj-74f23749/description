@@ -1,0 +1,3 @@
+source: src/app.service.ts
+kind: object
+purpose: Root application service providing getHello() method for health-check.

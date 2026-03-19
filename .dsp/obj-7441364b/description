@@ -1,0 +1,3 @@
+source: src/lib/entity/index.ts
+kind: object
+purpose: Barrel re-export for all TypeORM entities. New entities added here are auto-registered by TypeORMInfraModule.

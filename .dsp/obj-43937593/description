@@ -1,0 +1,3 @@
+source: axios
+kind: external
+purpose: Promise-based HTTP client for browser and Node.js.

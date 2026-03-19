@@ -1,0 +1,3 @@
+source: frontend/src/i18n/locales/ru.json
+kind: object
+purpose: Russian translation resource for all UI strings.

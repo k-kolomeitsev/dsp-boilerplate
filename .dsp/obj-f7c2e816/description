@@ -1,0 +1,3 @@
+source: src/lib/infra/redis.config.ts
+kind: object
+purpose: Redis connection configuration: host, port, optional user/password. Scaffold — not active by default.

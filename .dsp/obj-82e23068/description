@@ -1,0 +1,3 @@
+source: src/main.ts
+kind: object
+purpose: Backend entry point for NestJS 11 fullstack boilerplate (DSP Boilerplate). Bootstraps NestJS app with CORS, ValidationPipe, Swagger docs, global prefix. The project includes PostgreSQL via TypeORM, with scaffold modules for Redis, S3/MinIO, and NATS.

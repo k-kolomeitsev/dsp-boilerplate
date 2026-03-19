@@ -1,0 +1,3 @@
+source: src/lib/common/validate-response.ts
+kind: object
+purpose: Utility to transform and validate API responses via class-transformer (excludeAll strategy) and class-validator. Throws UnprocessableEntityException on validation failures.

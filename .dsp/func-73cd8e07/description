@@ -1,0 +1,3 @@
+source: frontend/src/helpers/custom-client.ts#useCustomInstance
+kind: function
+purpose: React hook wrapper for customInstance, used as Orval mutator in generated hooks.

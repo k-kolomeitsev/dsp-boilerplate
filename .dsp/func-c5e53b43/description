@@ -1,0 +1,3 @@
+source: src/lib/infra/global.config.ts#GlobalConfig
+kind: function
+purpose: Configuration class for app-level env vars with isProd getter.

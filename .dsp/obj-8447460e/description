@@ -1,0 +1,3 @@
+source: src/lib/infra/redis-logs.service.ts
+kind: object
+purpose: Service that publishes log messages to Redis pub/sub channel. Scaffold — not active by default.

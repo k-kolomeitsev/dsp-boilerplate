@@ -1,0 +1,3 @@
+source: src/typeorm-cli-datasource.ts
+kind: object
+purpose: TypeORM CLI DataSource for running migrations outside of NestJS. Reads PostgreSQL config directly from process.env with dotenv.

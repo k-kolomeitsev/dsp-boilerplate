@@ -1,0 +1,3 @@
+source: frontend/src/vite-env.d.ts
+kind: object
+purpose: Vite client type reference declaration. Enables import.meta.env typing and asset import types.

@@ -1,0 +1,3 @@
+source: src/lib/common/s3-storage.ts#saveEventToStorage
+kind: function
+purpose: Uploads JSON data to S3 with date-based key path. Scaffold.

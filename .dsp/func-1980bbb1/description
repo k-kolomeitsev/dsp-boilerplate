@@ -1,0 +1,3 @@
+source: src/lib/common/validate-response.ts#validateResponse
+kind: function
+purpose: Overloaded function to transform+validate single or array responses.

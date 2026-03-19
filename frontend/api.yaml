@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: DSP Boilerplate API
+  version: 0.0.1
+  description: Minimal API specification for the DSP Boilerplate project.
+
+paths:
+  /api/health:
+    get:
+      operationId: AppController_healthCheck
+      summary: Health check
+      tags:
+        - app
+      responses:
+        '200':
+          description: Service is healthy.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthCheckResponseDto'
+
+components:
+  schemas:
+    HealthCheckResponseDto:
+      type: object
+      required:
+        - status
+      properties:
+        status:
+          type: string
+          example: ok

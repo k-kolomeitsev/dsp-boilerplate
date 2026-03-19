@@ -1,0 +1,3 @@
+source: src/lib/infra/redis-logs.service.ts#RedisLogsService
+kind: function
+purpose: Service class publishing logs to Redis pub/sub. Scaffold.

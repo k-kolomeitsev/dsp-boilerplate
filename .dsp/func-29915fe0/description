@@ -1,0 +1,3 @@
+source: src/lib/common/s3-storage.ts#getFromStorage
+kind: function
+purpose: Downloads and parses JSON from S3 by media path. Scaffold.

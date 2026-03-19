@@ -1,0 +1,3 @@
+source: @tanstack/react-query
+kind: external
+purpose: Async state management for server data: caching, refetching, pagination.

@@ -1,0 +1,3 @@
+source: aws-sdk
+kind: external
+purpose: AWS SDK v2 for JavaScript — S3, DynamoDB, etc.

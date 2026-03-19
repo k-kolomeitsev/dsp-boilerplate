@@ -1,0 +1,3 @@
+source: src/lib/infra/redis.config.ts#RedisConfig
+kind: function
+purpose: Configuration class for Redis connection with redisOptions getter. Scaffold.

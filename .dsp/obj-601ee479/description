@@ -1,0 +1,3 @@
+source: ioredis
+kind: external
+purpose: Redis client for Node.js with cluster and sentinel support.

@@ -1,0 +1,1 @@
+Async mutator function for Orval: merges config, normalizes URL, returns response.data.

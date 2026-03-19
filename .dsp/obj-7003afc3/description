@@ -1,0 +1,3 @@
+source: src/lib/infra/global.infra-module.ts
+kind: object
+purpose: Global NestJS module that provides GlobalConfig as a global provider across the application.

@@ -1,0 +1,3 @@
+source: src/lib/infra/redis.infra-module.ts
+kind: object
+purpose: Global NestJS module providing Redis via @nestjs-modules/ioredis with RedisLogsService. Scaffold — not active by default.

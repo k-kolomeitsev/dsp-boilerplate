@@ -1,0 +1,3 @@
+source: src/lib/infra/redis.infra-module.ts#RedisInfraModule
+kind: function
+purpose: Global module providing Redis via ioredis. Scaffold.

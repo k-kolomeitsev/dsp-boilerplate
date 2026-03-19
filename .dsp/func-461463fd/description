@@ -1,0 +1,3 @@
+source: src/lib/common/s3-storage.ts#downloadS3ObjectToFile
+kind: function
+purpose: Streams S3 object to local file via pipeline. Scaffold.

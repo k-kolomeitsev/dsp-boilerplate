@@ -1,0 +1,3 @@
+source: src/lib/common/nats-jetstream.helper.ts#ensureJetStreamWorkQueueStream
+kind: function
+purpose: Creates or updates a JetStream work-queue stream with dedup window. Scaffold.

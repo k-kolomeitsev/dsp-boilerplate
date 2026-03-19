@@ -1,0 +1,3 @@
+source: src/lib/infra/nats.config.ts
+kind: object
+purpose: NATS connection configuration: servers, queue, auth (token/user+pass), TLS, reconnect settings. Scaffold — not active by default.

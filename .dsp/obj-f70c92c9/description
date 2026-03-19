@@ -1,0 +1,3 @@
+source: src/app.module.ts
+kind: object
+purpose: Root NestJS module. Wires GlobalInfraModule, TypeORMInfraModule, ExampleModule, AppController, and AppService together.

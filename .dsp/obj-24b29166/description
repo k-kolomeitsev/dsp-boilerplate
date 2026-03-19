@@ -1,0 +1,3 @@
+source: src/lib/infra/nats.config-module.ts
+kind: object
+purpose: NestJS proxy module that provides and exports NatsConfig. Scaffold — not active by default.

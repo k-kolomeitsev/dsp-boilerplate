@@ -1,0 +1,3 @@
+source: frontend/src/helpers/custom-client.ts#customInstance
+kind: function
+purpose: Async mutator function for Orval: merges config, normalizes URL, returns response.data.

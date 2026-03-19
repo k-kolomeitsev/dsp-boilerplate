@@ -1,0 +1,3 @@
+source: nest-aws-sdk
+kind: external
+purpose: NestJS wrapper for aws-sdk with async configuration.

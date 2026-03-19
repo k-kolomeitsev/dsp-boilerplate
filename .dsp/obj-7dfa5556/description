@@ -1,0 +1,3 @@
+source: dotenv
+kind: external
+purpose: Loads environment variables from .env file into process.env.

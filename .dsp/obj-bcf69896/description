@@ -1,0 +1,3 @@
+source: src/lib/common/env-value.decorator.ts
+kind: object
+purpose: Property decorator that reads environment variables and maps them to class properties with type coercion (Number, Boolean, String) and optional transforms/defaults.

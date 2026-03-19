@@ -1,0 +1,3 @@
+source: src/lib/common/constants.ts
+kind: object
+purpose: Shared constants: LogChannelName for Redis pub/sub log channel.

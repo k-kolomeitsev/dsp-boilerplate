@@ -1,0 +1,3 @@
+source: @nestjs-modules/ioredis
+kind: external
+purpose: NestJS wrapper module for ioredis Redis client.

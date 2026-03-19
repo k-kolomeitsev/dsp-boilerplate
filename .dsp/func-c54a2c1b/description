@@ -1,0 +1,3 @@
+source: src/services/example/example.module.ts#ExampleModule
+kind: function
+purpose: NestJS module wiring Example CRUD components.

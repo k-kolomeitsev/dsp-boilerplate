@@ -1,0 +1,3 @@
+source: src/lib/infra/typeorm.infra-module.ts#TypeORMInfraModule
+kind: function
+purpose: Global module class providing TypeORM async configuration.

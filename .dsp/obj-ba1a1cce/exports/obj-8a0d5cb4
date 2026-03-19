@@ -1,0 +1,1 @@
+RedisModule.forRootAsync for async Redis connection

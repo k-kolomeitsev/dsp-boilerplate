@@ -1,0 +1,3 @@
+source: @headlessui/react
+kind: external
+purpose: Unstyled, accessible UI primitives: Menu, Dialog, Listbox, etc.

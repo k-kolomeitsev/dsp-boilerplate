@@ -1,0 +1,3 @@
+source: src/lib/infra/nats.config.ts#NatsConfig
+kind: function
+purpose: Configuration class for NATS servers, auth, TLS, reconnect with clientOptions getter. Scaffold.

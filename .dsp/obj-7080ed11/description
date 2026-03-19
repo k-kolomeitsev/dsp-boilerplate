@@ -1,0 +1,3 @@
+source: src/lib/common/index.ts
+kind: object
+purpose: Barrel re-export for all common utilities: constants, decorators, config base class, moment, S3 helpers, validation, NATS helpers.

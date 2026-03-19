@@ -1,0 +1,3 @@
+source: src/app.controller.ts#AppController
+kind: function
+purpose: Health-check controller class with GET / endpoint.

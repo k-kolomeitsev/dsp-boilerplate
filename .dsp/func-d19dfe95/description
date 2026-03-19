@@ -1,0 +1,3 @@
+source: src/lib/common/env-value.decorator.ts#EnvValue
+kind: function
+purpose: Property decorator factory for environment variable injection with type coercion.

@@ -1,0 +1,3 @@
+source: frontend/src/App.css
+kind: object
+purpose: Custom CSS: accent color variables (--accent-primary/secondary/tertiary), .hp-btn button variants (primary/green/outline/ghost, sizes md/lg/xl), .hp-input input styles.

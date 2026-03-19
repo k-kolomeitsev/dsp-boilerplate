@@ -1,0 +1,3 @@
+source: src/services/example/example.controller.ts
+kind: object
+purpose: REST controller for /examples: POST create, GET findAll, GET :id findOne, DELETE :id remove. Uses Swagger decorators and validateResponse.

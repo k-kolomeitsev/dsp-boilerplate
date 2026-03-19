@@ -1,0 +1,3 @@
+source: src/app.controller.ts
+kind: object
+purpose: Root health-check controller. Exposes GET / endpoint tagged as 'app' in Swagger.

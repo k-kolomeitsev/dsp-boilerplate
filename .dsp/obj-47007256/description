@@ -1,0 +1,3 @@
+source: react
+kind: external
+purpose: Core React library for building UI components.

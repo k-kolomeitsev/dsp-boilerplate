@@ -1,0 +1,3 @@
+source: frontend/src/helpers/custom-client.ts
+kind: object
+purpose: Axios HTTP client configured for Orval code generation. Normalizes URLs with /api prefix, enables withCredentials for cookie auth, supports AbortSignal for TanStack Query cancellation.

@@ -1,0 +1,3 @@
+source: src/lib/entity/Example.entity.ts
+kind: object
+purpose: TypeORM entity for 'examples' table with auto-increment bigint PK, name, nullable description, and timestamp columns.

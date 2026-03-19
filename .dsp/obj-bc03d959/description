@@ -1,0 +1,3 @@
+source: src/lib/infra/s3.config.ts
+kind: object
+purpose: S3/MinIO connection configuration: bucket, endpoint, credentials, region. Scaffold — not active by default.

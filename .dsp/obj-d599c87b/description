@@ -1,0 +1,3 @@
+source: i18next-browser-languagedetector
+kind: external
+purpose: Browser language detection plugin for i18next (querystring, localStorage, navigator).

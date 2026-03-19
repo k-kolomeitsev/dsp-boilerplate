@@ -1,0 +1,3 @@
+source: @nestjs/platform-express
+kind: external
+purpose: Express.js adapter for NestJS HTTP layer.

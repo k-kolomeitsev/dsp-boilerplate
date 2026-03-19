@@ -1,0 +1,3 @@
+source: typeorm
+kind: external
+purpose: TypeScript ORM for PostgreSQL, MySQL, SQLite, etc.

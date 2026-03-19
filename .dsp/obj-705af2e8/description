@@ -1,0 +1,3 @@
+source: src/lib/common/s3-storage.ts
+kind: object
+purpose: S3 file operation helpers: saveEventToStorage (upload JSON), getFromStorage (download+parse), downloadS3ObjectToFile (stream to disk). Scaffold — not active by default.

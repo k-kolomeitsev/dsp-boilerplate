@@ -1,0 +1,3 @@
+source: frontend/src/utils/cn.ts#cn
+kind: function
+purpose: Utility function to merge CSS class names, filtering out falsy values.

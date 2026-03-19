@@ -1,0 +1,3 @@
+source: src/lib/common/config-fragment.ts#ConfigFragment
+kind: function
+purpose: Base config class implementing OnModuleInit for startup validation.

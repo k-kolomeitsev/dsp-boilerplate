@@ -1,0 +1,1 @@
+Root React component handling routing, HelmetProvider, language detection from URL, and RTL direction switching.

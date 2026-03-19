@@ -1,0 +1,3 @@
+source: src/lib/entity/Example.entity.ts#Example
+kind: function
+purpose: TypeORM entity class mapping to 'examples' table.

@@ -1,0 +1,3 @@
+source: frontend/src/i18n/index.ts#i18n
+kind: function
+purpose: Configured i18next instance with 5 language resources and browser detection.

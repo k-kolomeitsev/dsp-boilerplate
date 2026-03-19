@@ -1,0 +1,3 @@
+source: src/lib/infra/nats.infra-module.ts#NatsInfraModule
+kind: function
+purpose: Global module providing NATS client. Exports NATS_CLIENT token. Scaffold.

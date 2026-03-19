@@ -1,0 +1,3 @@
+source: frontend/src/pages/HomePage.tsx
+kind: object
+purpose: Main landing page component. Renders SEOHead, LanguageSwitcher, translated heading, and GitHub link button.

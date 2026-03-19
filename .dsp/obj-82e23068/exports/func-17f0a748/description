@@ -1,0 +1,1 @@
+Async bootstrap function: creates NestJS app, configures CORS, pipes, prefix, Swagger, and starts listening.

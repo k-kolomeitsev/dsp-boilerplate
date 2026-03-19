@@ -1,0 +1,3 @@
+source: src/lib/common/moment.ts
+kind: object
+purpose: Moment.js wrapper that forces UTC offset to 0 for all date operations.

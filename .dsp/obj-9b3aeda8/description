@@ -1,0 +1,3 @@
+source: src/lib/common/config-fragment.ts
+kind: object
+purpose: Base class for validated configuration. Implements OnModuleInit to run class-validator checks at startup, throwing on invalid env values.
