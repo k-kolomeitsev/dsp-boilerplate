@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'DSP_ROOT=$(git rev-parse --show-toplevel 2>/dev/null || echo .); CLI=\"\"; for p in .cursor .claude .codex; do if [ -f \"$DSP_ROOT/$p/skills/data-structure-protocol/scripts/dsp-cli.py\" ]; then CLI=\"python $DSP_ROOT/$p/skills/data-structure-protocol/scripts/dsp-cli.py\"; break; fi; done; if [ -n \"$CLI\" ] && [ -d \"$DSP_ROOT/.dsp\" ]; then $CLI --root \"$DSP_ROOT\" get-stats 2>/dev/null || true; fi'"
+          }
+        ]
+      }
+    ]
+  }
+}

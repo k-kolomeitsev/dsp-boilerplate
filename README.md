@@ -198,3 +198,44 @@ dsp-cli get-entity <uid>
 dsp-cli get-children <uid> --depth N
 dsp-cli get-parents <uid> --depth N
 ```
+
+### DSP Usage Examples
+
+```bash
+# Find a module by its file path
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . find-by-source src/app.module.ts
+
+# Explore backend dependencies (depth 2)
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . get-children obj-82e23068 --depth 2
+
+# Impact analysis: who depends on a module?
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . get-parents obj-XXXXXXXX --depth inf
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . get-recipients obj-XXXXXXXX
+
+# Graph overview
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . get-stats
+
+# Read table of contents
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . read-toc --toc obj-82e23068  # backend
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . read-toc --toc obj-ca619436  # frontend
+
+# Search by keyword
+python .claude/skills/data-structure-protocol/scripts/dsp-cli.py --root . search "authentication"
+```
+
+### DSP Integration
+
+This project includes DSP integration for all major AI coding agents:
+
+| Agent | Skill Location | Additional |
+|-------|---------------|------------|
+| Claude Code | `.claude/skills/data-structure-protocol/` | Hooks in `.claude/settings.json` |
+| Cursor | `.cursor/skills/data-structure-protocol/` | Rules in `.cursor/rules/dsp-core.mdc` |
+| Codex | `.codex/skills/data-structure-protocol/` | — |
+
+Universal agent guidance: [`AGENTS.md`](AGENTS.md)
+
+Git hooks for DSP consistency: `.githooks/pre-commit`, `.githooks/pre-push`
+CI: `.github/workflows/dsp-consistency.yml`
+
+Learn more about DSP: [Data Structure Protocol](https://github.com/k-kolomeitsev/data-structure-protocol)

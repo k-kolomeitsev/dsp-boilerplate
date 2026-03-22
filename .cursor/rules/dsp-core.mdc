@@ -1,0 +1,34 @@
+---
+description: Core DSP awareness - read DSP before modifying code, update DSP after changes
+globs:
+alwaysApply: true
+---
+
+# DSP Core Rule
+
+This project uses **Data Structure Protocol (DSP)**. The `.dsp/` directory is the entity graph — modules, functions, dependencies, public API.
+
+## Before Modifying Code
+
+1. Locate affected entities via `search`, `find-by-source`, or `read-toc`
+2. Read the entity's `description` and `imports` to understand context
+3. Check `get-recipients` to understand who depends on what you're changing
+
+## After Modifying Code
+
+- **New file created** → `create-object` to register it, then `add-import` for its dependencies
+- **New public function/class** → `create-function` + `create-shared` + add `@dsp <uid>` marker in code
+- **New import added** → `add-import` with `why` explanation
+- **File deleted** → `remove-entity` or `remove-import`/`remove-shared` as needed
+- **File moved** → `move-entity`
+
+## When NOT to Update DSP
+
+- Internal-only changes (formatting, comments, private function body edits)
+- Changes that don't affect purpose, dependencies, or public API
+
+## CLI Location
+
+```
+python .cursor/skills/data-structure-protocol/scripts/dsp-cli.py --root .
+```
