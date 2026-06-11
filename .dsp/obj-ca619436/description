@@ -1,3 +1,4 @@
 source: frontend/src/main.tsx
 kind: object
 purpose: Frontend entry point for React 19 SPA. Creates QueryClient, renders App in StrictMode with QueryClientProvider. Initializes i18n and imports global styles.
+scope: frontend

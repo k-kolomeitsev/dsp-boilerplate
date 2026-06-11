@@ -21,6 +21,8 @@ This project uses **Data Structure Protocol (DSP)**. The `.dsp/` directory is th
 - **New import added** → `add-import` with `why` explanation
 - **File deleted** → `remove-entity` or `remove-import`/`remove-shared` as needed
 - **File moved** → `move-entity`
+- **Module migrated between subprojects/roots** → `move-to-toc <uid> --from <TOC> --to <TOC>` (`<TOC>` = root UID or `default`)
+- **After deletions/moves** → verify nothing is left dangling with `get-orphans`
 
 ## When NOT to Update DSP
 
@@ -32,3 +34,5 @@ This project uses **Data Structure Protocol (DSP)**. The `.dsp/` directory is th
 ```
 python .cursor/skills/data-structure-protocol/scripts/dsp-cli.py --root .
 ```
+
+Arguments are positional — quote multi-word values. New entities land in TOCs automatically by root scope (`src` → backend TOC, `frontend` → frontend TOC); override with repeatable `--toc <TOC>`.

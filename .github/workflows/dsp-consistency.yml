@@ -84,11 +84,13 @@ jobs:
           BASE_SHA="${{ github.event.pull_request.base.sha }}"
           WARNINGS=0
 
+          # find-by-source prints "not found" to stdout on a miss, so both
+          # the output marker and emptiness must be checked.
           for file in $(git diff --name-only --diff-filter=ACMR "$BASE_SHA"...HEAD); do
             case "$file" in
               *.ts|*.tsx|*.js|*.jsx|*.py|*.go|*.rs|*.java|*.rb|*.vue|*.svelte)
                 result=$($CLI --root . find-by-source "$file" 2>/dev/null || true)
-                if [ -z "$result" ]; then
+                if [[ -z "$result" || "$result" == *"not found"* ]]; then
                   echo "::warning file=$file::New/modified file not registered in DSP: $file"
                   WARNINGS=$((WARNINGS + 1))
                 fi
@@ -98,7 +100,7 @@ jobs:
 
           for file in $(git diff --name-only --diff-filter=D "$BASE_SHA"...HEAD); do
             result=$($CLI --root . find-by-source "$file" 2>/dev/null || true)
-            if [ -n "$result" ]; then
+            if [[ -n "$result" && "$result" != *"not found"* ]]; then
               echo "::warning file=$file::Deleted file still registered in DSP: $file (entity: $result)"
               WARNINGS=$((WARNINGS + 1))
             fi

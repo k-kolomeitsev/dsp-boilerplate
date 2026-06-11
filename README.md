@@ -174,12 +174,14 @@ Without Traefik, Swagger is available directly at: `http://localhost:3000/api/do
 
 The project has an initialized [DSP](https://github.com/k-kolomeitsev/data-structure-protocol) graph in the `.dsp/` directory — a structural memory of the codebase for LLM agents. It stores entities (modules, functions, external dependencies), their relationships (imports/exports), and reasons for every connection.
 
-Two roots (entry points):
+Two roots (entry points), each with a directory scope:
 
-| Root | TOC file | Entry point |
-|------|----------|-------------|
-| **Backend** | `TOC-obj-82e23068` | `src/main.ts` |
-| **Frontend** | `TOC-obj-ca619436` | `frontend/src/main.tsx` |
+| Root | TOC file | Entry point | Scope |
+|------|----------|-------------|-------|
+| **Backend** | `TOC-obj-82e23068` | `src/main.ts` | `src` |
+| **Frontend** | `TOC-obj-ca619436` | `frontend/src/main.tsx` | `frontend` |
+
+New entities are assigned to TOCs automatically by root scope: files under `src/` land in the backend TOC, files under `frontend/` in the frontend TOC (externals need an explicit `--toc`).
 
 All source files contain `// @dsp <uid>` markers linking code to graph entities.
 
