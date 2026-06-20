@@ -53,6 +53,9 @@ New entities land in every TOC whose root scope covers their source path — fil
 | `update-description <uid> --source/--purpose/--kind/--scope` | Update entity fields |
 | `detect-cycles` | Find circular dependencies |
 | `get-orphans` | Find unused entities (nothing imports them) |
+| `rebuild-cache` | Rebuild the reverse-index cache — only after non-CLI edits to `.dsp/` |
+
+**Reverse-index cache.** `.dsp/.cache/` is a committed cache of the reverse adjacency (who imports what) that keeps `get-recipients`/`get-parents`/`get-path`/`get-entity` fast. The CLI updates it incrementally on every mutation and auto-builds it when missing, so you never touch it during normal work. Only run `rebuild-cache` when `.dsp/` changed **outside** the CLI (a manual edit, or a merge/rebase that touched `.dsp/`).
 
 **Shared entities are UIDs, not names.** To expose something as public API: first `create-function` (or `create-object`) for it, then pass the returned UID to `create-shared`. The CLI rejects anything that is not an existing `obj-`/`func-` UID.
 

@@ -56,6 +56,22 @@ jobs:
           echo "## DSP Graph Statistics"
           ${{ steps.detect-cli.outputs.cli }} --root . get-stats
 
+      - name: Verify reverse-index cache is committed and up to date
+        if: steps.detect-cli.outputs.cli != '' && steps.check-dsp.outputs.exists == 'true'
+        run: |
+          echo "## Reverse-index Cache Check"
+          # The committed .dsp/.cache must match a fresh rebuild. A mismatch means
+          # it is stale or missing (e.g. a merge/rebase touched .dsp/, or it was
+          # hand-edited, or the cache was never committed).
+          ${{ steps.detect-cli.outputs.cli }} --root . rebuild-cache
+          CHANGES="$(git status --porcelain -- .dsp/.cache)"
+          if [ -n "$CHANGES" ]; then
+            echo "::error::.dsp/.cache is stale, missing, or uncommitted. Run 'dsp-cli rebuild-cache' and commit .dsp/.cache."
+            echo "$CHANGES"
+            exit 1
+          fi
+          echo "Reverse-index cache matches a fresh rebuild."
+
       - name: Check for orphans
         if: steps.detect-cli.outputs.cli != '' && steps.check-dsp.outputs.exists == 'true'
         run: |

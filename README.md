@@ -185,6 +185,8 @@ New entities are assigned to TOCs automatically by root scope: files under `src/
 
 All source files contain `// @dsp <uid>` markers linking code to graph entities.
 
+The `.dsp/.cache/` directory holds a committed reverse-index cache that keeps impact-analysis queries (`get-recipients`, `get-parents`, `get-path`, `get-entity`) fast on a large graph. The CLI maintains it automatically and a missing cache is rebuilt on first use, so normal work needs no extra step. Run `dsp-cli rebuild-cache` only after `.dsp/` was changed **outside** the CLI — a hand edit, or a merge/rebase that touched `.dsp/`.
+
 Key commands:
 
 ```bash
@@ -199,6 +201,9 @@ dsp-cli search <query>
 dsp-cli get-entity <uid>
 dsp-cli get-children <uid> --depth N
 dsp-cli get-parents <uid> --depth N
+
+# Maintenance
+dsp-cli rebuild-cache                  # only after non-CLI edits to .dsp/
 ```
 
 ### DSP Usage Examples

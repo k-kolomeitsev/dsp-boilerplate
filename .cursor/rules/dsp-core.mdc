@@ -29,6 +29,10 @@ This project uses **Data Structure Protocol (DSP)**. The `.dsp/` directory is th
 - Internal-only changes (formatting, comments, private function body edits)
 - Changes that don't affect purpose, dependencies, or public API
 
+## Reverse-index cache
+
+`.dsp/.cache/` is a committed cache (who-imports-what) that speeds up `get-recipients`/`get-parents`/`get-path`. The CLI keeps it current automatically — don't touch it during normal work. After a merge/rebase that touched `.dsp/`, or any manual edit of `.dsp/`, run `rebuild-cache`.
+
 ## CLI Location
 
 ```
